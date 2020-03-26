@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.madd.madd.twitterkapp">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".di.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name="com.madd.madd.twitterkapp.DI.App"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.TweetSearch.TweetSearchActivity"></activity>
+        <activity android:name=".ui.TweetRegister.TweetRegisterActivity" />
+        <activity android:name=".ui.TweetDetail.TweetDetailActivity" />
         <activity
-            android:name="com.madd.madd.twitterkapp.UI.Activities.MainActivity"
+            android:name=".ui.UserProfile.UserProfileActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
